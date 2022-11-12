@@ -1,0 +1,9 @@
+We downloaded the map from OpenStreetMap (https://www.openstreetmap.org/export#map=13/45.3303/14.4584). 
+We installed the OsmConvert.exe application file (https://wiki.openstreetmap.org/wiki/Osmconvert) and converted "rijeka.osm" to "rijeka.o5m" through the command line from the same folder.
+
+Later, by following the guides in the cmd for file conversion from .osm to .o5m format.
+We installed OsmFilter.exe , and used the "osmfilter" command with pipes to filter the data and export it to .csv file.
+
+osmfilter rijeka.o5m --keep="amenity=parking" | osmconvert - --all-to-nodes --csv="@id addr:city name addr:street @lat @lon" --csv-headline --csv-separator="," -o="parking.csv"
+
+With the command above we keep the data for all the parkings, more specifically their ID, address, city, name, latitude, and longitude in the file named parking.csv.
