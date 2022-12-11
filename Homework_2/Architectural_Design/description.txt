@@ -1,1 +1,15 @@
+Conceptual diagram
+
+The application is considered as an assembly of smaller parts or elements with their respective responsibilities as well as the flow of information between them.
+In the conceptual diagram you can see the global architecture of the application shown in a conceptual view. The first thing to note is the layering of the app. Three logical layers are shown that communicate with each other. 
+When the client accesses the application with a request to find information about a specific parking location, the application communicates with the lower layer that aims to transmit all the information to it such as the location, price, route etc. This layer then communicates with the third or lowest layer to perform all these tasks, which is the data that the app gets from our database.
+
+---------------------------------------------------------
+Execution architecture
+
+The execution view shows the architecture of the application divided into execution parts and the way it all functions.
+The user accesses the application by using the browser on their device. The browser itself communicates with the server on which the application is located and its business logic, while the application communicates with certain APIs to perform its functionalities. In this diagram, it can be observed that the application itself is composed of several components that communicate with each other in order to create a whole functional web program.
+---------------------------------------------------------
 Implementation diagram
+
+The implementation view shows a closer view of the way the application functions. In this diagram, it can be observed that the browser from the user's device communicates with the server on which it is located, which at the same time communicates with the database and the system to update information, inform the user about the actions and function properly as required.
