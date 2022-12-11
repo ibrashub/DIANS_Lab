@@ -1,0 +1,6 @@
+Implementation diagram
+
+In this regard, the application is considered as an assembly of smaller parts or elements with their respective responsibilities as well as the flow of information between them.
+
+In the diagram above you can see the global architecture of the application shown in a conceptual view. The first thing to note is the layering of the app itself. Three logical layers are shown that communicate with each other, when the client accesses the application with a request to find information about a specific location, the application communicates with the lower layer that aims to transmit all the information to it in a certain given format. This layer communicates with the lower layer to perform its task
+which asks him for specific information about the given location (eg: Location, address, rating, etc.). The second layer communicates with the third layer where all information is housed in multiple files. The data is propagated up to the application itself which displays it to the end user.
