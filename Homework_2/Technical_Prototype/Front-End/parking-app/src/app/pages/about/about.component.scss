@@ -1,0 +1,36 @@
+.main-card {  
+    color: #fff;
+    background-image: url("../../../assets/bg3.png");  
+    background-size: 100%;  
+    background-size: cover;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.example-card {
+    max-width: 800px;
+    margin-top: 150px;  
+    margin-bottom: 300px;
+    background-color: #ffffff;
+    padding: 50px 100px 50px 100px;
+    mat-card-content {
+        text-align: center;
+        p {
+            font-size: x-large;
+        }
+    }
+}
+
+.photo {  
+    width: 645px;
+    height: 575px;
+    margin-left: 50px;
+    color: #fff;
+    background-image: url("../../../assets/aboutus.png");  
+    background-size: 100%;  
+    background-size: cover;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 

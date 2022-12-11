@@ -1,0 +1,53 @@
+.main-card {  
+    color: #fff;
+    background-image: url("../../../assets/background.jpg");  
+    background-size: 100%;  
+    background-size: cover;  
+}  
+.example-card {
+    max-width: 800px;
+    margin-top: 260px;  
+    margin-bottom: 300px;
+    background-color: #ffffff;
+    padding: 50px 100px 50px 100px;
+    mat-card-content {
+        text-align: center;
+        p {
+            margin: 20px 0 20px 0;
+        }
+        button {
+            height: 80px;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size: large;
+            background-color: #eeeeee;
+            p {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-size: xx-large;
+                margin: 0 0 0 0;
+            }
+        }
+        .auth {
+            margin: 20px 20px 20px 20px;
+            height: 50px;
+            width: 150px;
+            padding-left: 10px;
+            padding-right: 10px;
+            
+        }
+        p {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: xx-large;
+            margin: 0 0 0 0;
+        }
+    }
+}
+
+.main-card {
+    display: flex;
+    justify-content: left;
+    padding-left: 200px;
+    align-items: lef;
+}
