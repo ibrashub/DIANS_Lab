@@ -1,0 +1,66 @@
+:host {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    color: black;
+    margin: 0 0 0 30px;
+    font-weight: 500;
+    font-size: xx-large;
+}
+.spacer {
+    flex: 1;
+}
+
+.toolbar {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    height: 45px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: white;
+    font-weight: 450;
+}
+
+a {
+    font-weight: 900;
+    font-family: 'League Spartan';
+    font-size: 18px;
+     color: #2948ad;
+     
+}
+a:visited,
+a:hover {
+    color: #2948ad;
+}
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+    padding: 15px;
+}
+
+li {
+    display: inline-flex;
+}
+
+ul {
+    padding-right: 20px;
+}
+
+
+.images {
+    text-align: center;
+        height: 64px;
+        width: 64px;
+        margin: 0 20px 0 20px;
+}
+img {
+    margin: 0 0 0 5px;
+}

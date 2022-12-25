@@ -1,0 +1,43 @@
+<div class="toolbar" role="banner">
+  <img src="../assets/parkinghereicon.png" class="images">
+  <h1>Park here</h1>
+  <div class="spacer"></div>
+
+<ul>
+      <li *ngIf="getLanguage()=='EN'"><a routerLink="/about" routerLinkActive="active">About</a></li>
+    <li *ngIf="getLanguage()=='HR'"><a routerLink="/about" routerLinkActive="active">O nama</a></li>
+    <li *ngIf="getLanguage()=='IT'"><a routerLink="/about" routerLinkActive="active">Riguardo a noi</a></li>
+
+    <li *ngIf="getLanguage()=='EN'"><a routerLink="/auth/register" routerLinkActive="active">Register</a></li>
+    <li *ngIf="getLanguage()=='HR'"><a routerLink="/auth/register" routerLinkActive="active">Registrirajte se</a></li>
+    <li *ngIf="getLanguage()=='IT'"><a routerLink="/auth/register" routerLinkActive="active">Registrati</a></li>
+
+    <li *ngIf="getLanguage()=='EN'"><a routerLink="/auth/login" routerLinkActive="active">Log In</a></li>
+    <li *ngIf="getLanguage()=='HR'"><a routerLink="/auth/login" routerLinkActive="active">Prijaviti se</a></li>
+    <li *ngIf="getLanguage()=='IT'"><a routerLink="/auth/login" routerLinkActive="active">Accedi</a></li>
+
+    <li *ngIf="getLanguage()=='EN'"><a routerLink="/home" routerLinkActive="active">Home</a></li>
+    <li *ngIf="getLanguage()=='HR'"><a routerLink="/home" routerLinkActive="active">Početna stranica</a></li>
+    <li *ngIf="getLanguage()=='IT'"><a routerLink="/home" routerLinkActive="active">Pagina iniziale</a></li>
+
+
+    <li *ngIf="getLanguage()=='EN'"><a routerLink="/profile" routerLinkActive="active">My Profile</a></li>
+    <li *ngIf="getLanguage()=='HR'"><a routerLink="/profile" routerLinkActive="active">Moj profil</a></li>
+    <li *ngIf="getLanguage()=='IT'"><a routerLink="/profile" routerLinkActive="active">Il mio profilo</a></li>
+   
+    <li *ngIf="getLanguage()=='EN'"><a routerLink="/help" routerLinkActive="active">Help</a></li>
+    <li *ngIf="getLanguage()=='HR'"><a routerLink="/help" routerLinkActive="active">Pomoć</a></li>
+    <li *ngIf="getLanguage()=='IT'"><a routerLink="/help" routerLinkActive="active">Assistenza</a></li>
+
+    <li>
+        <select [ngModel]="selectLanguage" (ngModelChange)="onChange($event)" >
+          <option [value]="i" *ngFor="let i of languages">{{i}}</option>
+      </select>
+      <img *ngIf="getLanguage()=='EN'" src="../assets/english.png" alt="EN" width="32px" height="32px">
+      <img *ngIf="getLanguage()=='HR'" src="../assets/croatian.png" alt="HR" width="32px" height="32px">
+      <img *ngIf="getLanguage()=='IT'" src="../assets/italian.png" alt="IT" width="32px" height="32px">
+    </li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>

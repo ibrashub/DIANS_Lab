@@ -1,0 +1,56 @@
+.main-card {
+  color: #fff;
+  background-image: url("https://media04.meinekirchenzeitung.at/article/2020/02/05/2/3212_XXL.jpg");
+  background-size: 100%;
+  background-size: cover;
+}
+
+.example-card {
+  max-width: 800px;
+  margin-top: 200px;
+  margin-bottom: 300px;
+  background-color: #ffffff;
+  padding: 50px 100px 50px 100px;
+
+  mat-card-content {
+    text-align: center;
+
+    p {
+      margin: 20px 0 20px 0;
+    }
+
+    input {
+      height: 60px;
+      padding-left: 50px;
+      padding-right: 50px;
+      font-size: large;
+      background-color: #eeeeee;
+    }
+
+    .auth {
+      height: 50px;
+      width: 250px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin: 10px 0 10px 0;
+    }
+
+    .auth::placeholder {
+      color: rgb(0, 0, 0);
+    }
+
+    p {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: xx-large;
+      margin: 0 0 0 0;
+    }
+  }
+}
+
+.main-card {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 200px;
+}

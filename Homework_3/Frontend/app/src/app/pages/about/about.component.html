@@ -1,0 +1,17 @@
+<!-- <div *ngFor="let breed of allBreeds">
+      <h4>{{breed}}</h4> 
+  </div> -->
+  <div class="main-card">
+    <mat-card class="example-card">
+        <mat-card-content>
+            <h1 *ngIf="getLanguage()=='EN'"> About us</h1>
+            <p *ngIf="getLanguage()=='EN'">We exist to make yor everyday life easier in a few clicks. No more rushing or being late anywhere while searcching for your nearest parking spot. Join us and discover the joys of having your-only 24/7 available vehicle spot.</p>
+            <h1 *ngIf="getLanguage()=='HR'"> O nama</h1>
+            <p *ngIf="getLanguage()=='HR'">Tu smo da bi vam olaksali zivot u par klikova. Vise ne morate zuriti ili kasniti zbog trazenja najblizeg parkirnog mjesta. Pridruzite nam se i imajte svoje parkirno mjesto 24/7, uvijek dostupno.
+            </p>
+            <h1 *ngIf="getLanguage()=='IT'"> Riguardo a noi</h1>
+            <p *ngIf="getLanguage()=='IT'">Esistiamo per semplificarti la vita di tutti i giorni in pochi clic. Non dovrai più correre o essere in ritardo ovunque mentre cerchi il parcheggio più vicino. Unisciti a noi e scopri le gioie di avere il tuo unico posto disponibile 24 ore su 24, 7 giorni su 7.</p>
+            <div class="photo"></div>
+        </mat-card-content>
+    </mat-card>
+</div>

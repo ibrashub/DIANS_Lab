@@ -1,0 +1,38 @@
+.main-card {
+  // overflow: hidden;
+  color: #fff;
+  background-image: url("https://media04.meinekirchenzeitung.at/article/2020/02/05/2/3212_XXL.jpg");
+  background-size: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 200px;
+}
+
+.example-card {
+  max-width: 800px;
+  margin-top: 150px;
+  margin-bottom: 300px;
+  background-color: #ffffff;
+  padding: 50px 100px 50px 100px;
+
+  mat-card-content {
+    text-align: center;
+
+    p {
+      font-size: x-large;
+    }
+  }
+}
+.photo {
+    overflow: hidden;
+    width: 800px;
+    height: 460px;
+    color: #fff;
+    background-image: url("https://tanic.design/wp-content/uploads/2021/03/Innosoft-Headquarters-Office.jpg");
+    background-size: 100%;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+} 
